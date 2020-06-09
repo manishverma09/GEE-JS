@@ -2,10 +2,7 @@
 Naive Geostatistical methods with stationary kernel do not give good estimates but are a good starting point. I hope to incorporate noise 
 SIF as I develop this more, but for now I am ignoring it.
 */
-
-
-
-var fluxtower = ee.FeatureCollection("users/fluxtower")
+var fluxtower = ee.FeatureCollection("users/fluxtower")     //Tower locations
 var mod13 = ee.ImageCollection("MODIS/006/MOD13A1")
 var myd13 = ee.ImageCollection("MODIS/006/MYD13A1")
 var mod11a1 = ee.ImageCollection("MODIS/006/MOD11A1")
@@ -13,7 +10,7 @@ var myd11a1 = ee.ImageCollection("MODIS/006/MYD11A1")
 var soilAus = ee.ImageCollection("CSIRO/SLGA")
 var demAus = ee.Image("AU/GA/DEM_1SEC/v10/DEM-S")
 var sentinel1 = ee.ImageCollection("COPERNICUS/S1_GRD")
-var oco14_15 = ee.FeatureCollection("mydata/SturtPlains_14_15")
+var oco14_15 = ee.FeatureCollection("mydata/SturtPlains_14_15")       // OCO-2 SIF, not yet available in GEE, so you will have to upload it
 var mcd43 = ee.ImageCollection("MODIS/006/MCD43A4")
 var stPl = /* color: #d63000 */ee.Geometry.Point([133.3502, -17.1507])
 var oco14_17 = ee.FeatureCollection("users/manishve/SIF/sifStPlains")
