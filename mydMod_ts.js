@@ -1,4 +1,11 @@
-var fluxtower = ee.FeatureCollection("users/manishve/fluxtower")
+/* Analysis of OCO-2 data near Flux Tower sites. The motivation is to develop one of more methods to estimate SIF at the tower site.
+Naive Geostatistical methods with stationary kernel do not give good estimates but are a good starting point. I hope to incorporate noise 
+SIF as I develop this more, but for now I am ignoring it.
+*/
+
+
+
+var fluxtower = ee.FeatureCollection("users/fluxtower")
 var mod13 = ee.ImageCollection("MODIS/006/MOD13A1")
 var myd13 = ee.ImageCollection("MODIS/006/MYD13A1")
 var mod11a1 = ee.ImageCollection("MODIS/006/MOD11A1")
