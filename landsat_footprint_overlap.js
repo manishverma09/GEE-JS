@@ -1,3 +1,5 @@
+// Find footprint overlap in different landsat. We can have more than one observations for the overlap areas
+
 var laCounty = ee.FeatureCollection("users/LA/County_Boundaries"),
 var daymet = ee.ImageCollection("NASA/ORNL/DAYMET_V3"),
 var ls5Sr1 = ee.ImageCollection("LANDSAT/LT05/C01/T1_SR"),
