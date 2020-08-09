@@ -6,3 +6,5 @@ JavaScript API. I will add scripts here with small descriptions about what they 
 
 (1) modMyd_ts.js: Creates a time series by stacking VIs from both Aqua and Tera MODIS and then interpolates to daily resolution with a Gaussian kernel. Change the kernel width if you want more or less smoothing. I chose the width after eyeballing the seasonal trajectories and local correlation. 
 
+(2) landsat_footrpint_overlap.js: Find overlap in footrpint for different landsat. 
+
