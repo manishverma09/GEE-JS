@@ -1,5 +1,4 @@
 # GEE-JS
-Gogole Earth Engine JS codes for satellite data analysis
 
 I have still not gotten into the habit of using functions across different projects and script files for the 
 JavaScript API. I will add scripts here with small descriptions about what they do. I have not edited the scripts, so you might find some extra code and material that is only marginally related to the the main objective. Here are the details of what each file does:
